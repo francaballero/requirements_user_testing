@@ -1,0 +1,278 @@
+@blue: #4c96da;
+@green: #00b5a5;
+@gray: #757575;
+@navbar-gradient: linear-gradient(to right, @blue 0%, @green 100%);
+@progresscolor: @blue;
+@footer-height: 65px;
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.checkboxes {
+    margin-top: 8px;
+}
+
+.checkboxes .first-checkbox {
+    margin-top: -5px;
+}
+
+.clear-hr {
+    border: 0;
+    margin: 5px;
+}
+
+.contact {
+    color: @gray;
+    a:link {
+        text-decoration: none;
+        color: @gray;
+        cursor: pointer;
+        cursor: hand;
+    }
+    a:visited {
+        text-decoration: none;
+        color: lighter(@gray, 5%);
+        cursor: pointer;
+        cursor: hand;
+    }
+    a:hover {
+        text-decoration: none;
+        color: darker(@gray, 5%);
+        cursor: pointer;
+        cursor: hand;
+    }
+    a:active {
+        text-decoration: none;
+        color: darker(@gray, 5%);
+        cursor: pointer;
+        cursor: hand;
+    }
+}
+
+.container {
+    margin-bottom: 0;
+    margin-top: 0;
+    padding-bottom: 0;
+    padding-top: 0;
+}
+
+.error {
+    opacity: .8;
+    color: rgb(230, 46, 0);
+    float: right;
+    margin: 7px 15px 0 0;
+}
+
+.help {
+    opacity: .9;
+    font-size: .9em;
+    margin-top: 13px;
+    text-align: right;
+    a {
+        color: white;
+    }
+    a:link {
+        text-decoration: none;
+        color: white;
+        cursor: pointer;
+        cursor: hand;
+    }
+    a:visited {
+        text-decoration: none;
+        color: whitesmoke;
+        cursor: pointer;
+        cursor: hand;
+    }
+    a:hover {
+        text-decoration: none;
+        color: lightgray;
+        cursor: pointer;
+        cursor: hand;
+    }
+    a:active {
+        text-decoration: none;
+        color: whitesmoke;
+        cursor: pointer;
+        cursor: hand;
+    }
+}
+
+.img-responsive img {
+    width: 100%;
+}
+
+@media (min-width: 992px) {
+    .introduction-box {
+        padding: 0 150px;
+    }
+}
+
+.instructions {
+    width: 100%;
+    border-radius: 7px;
+    border: 1px solid lightgray;
+}
+
+.introduction {
+    padding: 15px 50px 50px 50px;
+}
+
+.feedback {
+    margin: auto;
+    padding: 15px 20px 40px 20px;
+}
+
+form input.ng-invalid {
+    border: 1px solid rgba(255, 0, 0, 0.4);
+    -webkit-box-shadow: 0px 0px 8px -1px rgba(255, 0, 0, 0.3);
+    -moz-box-shadow: 0px 0px 8px -1px rgba(255, 0, 0, 0.3);
+    box-shadow: 0px 0px 8px -1px rgba(255, 0, 0, 0.3);
+}
+
+header {
+    background-image: @navbar-gradient;
+    color: white;
+    padding: 20px 0;
+}
+
+.help_bottom {
+    float: left;
+    text-align: left;
+    margin-top: 6px;
+}
+
+.hover_image:hover {
+    text-decoration: none
+}
+
+.hide {
+    display: none
+}
+
+.hover_image:hover img:first-child {
+    display: none
+}
+
+.hover_image:hover img:last-child {
+    display: inline-block
+}
+
+label {
+    font-weight: 500;
+}
+
+.logo {
+    width: 165px;
+    margin-top: 23px;
+}
+
+.main-container {
+    min-height: 100%;
+    margin-bottom: -(@footer-height);
+}
+
+.modal img {
+    display: block;
+    margin: 15px auto;
+    width: 100%
+}
+
+.notation-description {
+    text-align: left;
+    img {
+        width: 100%;
+    }
+}
+
+
+/* All Progress Bars */
+
+progress {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: #EEE;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2) inset;
+    border-radius: 3px;
+    width: 60%;
+    height: 10px;
+    margin-top: 14px;
+}
+
+progress[value] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+progress:not([value]) {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+progress::-webkit-progress-bar {
+    background: #EEE;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2) inset;
+    border-radius: 3px;
+}
+
+progress::-webkit-progress-value {
+    background: @progresscolor;
+    border-radius: 3px;
+    animation: progress-bar-stripes 2s linear infinite;
+}
+
+progress::-moz-progress-bar {
+    background: @progresscolor;
+    border-radius: 3px;
+}
+
+.requirements {
+    padding: 25px 50px 50px 50px;
+}
+
+.right-header-buttons {
+    margin-top: 4px;
+}
+
+.right-header-buttons .btn {
+    margin: 1px 0;
+    width: 100%;
+}
+
+.small-buttons {
+    margin-top: 8px;
+}
+
+strong {
+    font-weight: 600;
+}
+
+.submit {
+    margin: auto;
+}
+
+.success {
+    display: none;
+    font-size: .9em;
+    color: forestgreen;
+}
+
+.text-gray {
+    color: @gray;
+}
+
+video {
+    width: 100%;
+    height: auto;
+}
+
+.writing-description {
+    padding: 10px 30px 20px 30px;
+    h4 {
+        margin-bottom: 20px;
+    }
+}
